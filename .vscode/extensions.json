@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "wordpresstoolbox.wordpress-toolbox",
+    "bmewburn.vscode-intelephense-client",
+    "coenraads.bracket-pair-colorizer-2",
+    "ms-azuretools.vscode-docker",
+    "pkief.material-icon-theme",
+    "ms-vscode-remote.remote-containers",
+  ]
+}

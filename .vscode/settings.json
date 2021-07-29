@@ -1,0 +1,17 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 25,
+  "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": true,
+  "terminal.integrated.fontSize": 15,
+  "files.autoSave": "off",
+  "editor.formatOnSave": true,
+  "bracket-pair-colorizer-2.colors": ["#38A3A5", "#FFC857", "#57CC99"],
+  "bracket-pair-colorizer-2.forceUniqueOpeningColor": false,
+  "bracket-pair-colorizer-2.forceIterationColorCycle": false,
+  "bracket-pair-colorizer-2.colorMode": "Independent",
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+}

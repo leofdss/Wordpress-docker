@@ -1,0 +1,36 @@
+version: "2.1"
+services:
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:5.7.2
+    restart: always
+    volumes:
+      - ./src:/var/www/html/
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wpdb
+      XDEBUG_CONFIG: client_host=172.17.0.1
+    ports:
+      - 80:80 # Expose http and https
+      - 443:443
+    networks:
+      - back
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ../db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: wpdb
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wppass
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+    networks:
+      - back
+networks:
+  back:
